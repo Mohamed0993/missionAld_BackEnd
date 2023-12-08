@@ -1,0 +1,7 @@
+
+INSERT INTO `personal`(`personal_id`, `civilite`, `director`, `email`, `fonction`, `password`, `personal_class`, `personal_contact`, `personal_day_of_birth`, `personal_full_name`, `personal_matricule`, `personal_name`, `sex`, `bank_account_bank_account_id`, `id_grade`, `id_service`) VALUES ('2','M',false,'cmohamededouard@gmail.com','DAF','$2y$10$ZLJpn/Sg1.cBJaLs3hjf6.hqmoRV87MNDe0xfAm90o9fArh5wehPW','A','0758396559',NULL,'Mohamed Edouard','1602','CISSE','MALE',NULL,2,8);
+INSERT INTO `personal_profile`(`id`, `type`) VALUES ('1', 'ADMIN'),('2', 'USER');
+INSERT INTO `app_user_app_profile`(`user_id`, `user_profile_id`) VALUES ('2', '2');
+INSERT INTO `app_user_app_profile`(`user_id`, `user_profile_id`) VALUES ('2', '1');
+INSERT INTO `service`(`service_id`, `service_name`, `chef_personal_id`) VALUES ('1', 'Direction Générale', NULL), ('2', 'Direction Administratif et Financière', 1), ('3', 'Commercial', NULL), ('4', 'Comptable', NULL), ('5', 'Technique', NULL), ('6', 'Logistique', NULL);
+INSERT INTO `grade`(`id`, `label`, `type`) VALUES (1, 'Directeur General', 'DG'),(2, 'Directeur adjoint', 'DA'), (3, 'CHEF DE SERVICE', 'CHEF'),(4, 'Assistant(e)', 'ASSISTANT'),(5, 'AUTRE', 'AUTRE'),(6, 'DGA', 'DGA'),(7, 'CHEFA', 'CHEFA'),(8, 'Directeur Administratif et Financier', 'DAF');
